@@ -1,0 +1,28 @@
+export const trains = [
+  {
+    id: "1",
+    number: "041П",
+    from: "Дніпро",
+    to: "Львів",
+    departure: "2026-05-15T14:30:00",
+    duration: "18г 20хв"
+  },
+  
+  {
+    id: "2",
+    number: "705К",
+    from: "Київ",
+    to: "Перемишль",
+    departure: "2026-05-16T06:00:00",
+    duration: "9г 12хв"
+  },
+
+  {
+  id: "4",
+  number: "830Л",
+  from: "Дрогобич",
+  to: "Львів",
+  departure: "2026-05-17T06:30:00",
+  duration: "1г 45хв"
+}
+];
