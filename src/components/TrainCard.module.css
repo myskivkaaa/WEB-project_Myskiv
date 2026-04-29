@@ -1,0 +1,45 @@
+.card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background: white;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.number {
+  background: #f1f5f9;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.city {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #005ebb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background-color: #004a96;
+}
