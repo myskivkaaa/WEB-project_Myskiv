@@ -6,7 +6,11 @@
       "from": "Дніпро",
       "to": "Львів",
       "departure": "2026-05-15T14:30:00",
-      "duration": "18г 20хв"
+      "duration": "18г 20хв",
+      "wagons": [
+        { "id": 1, "type": "Купе", "seatsCount": 36 },
+        { "id": 2, "type": "Плацкарт", "seatsCount": 54 }
+      ]
     },
     {
       "id": "2",
@@ -14,7 +18,11 @@
       "from": "Київ",
       "to": "Перемишль",
       "departure": "2026-05-16T06:00:00",
-      "duration": "9г 12хв"
+      "duration": "9г 12хв",
+      "wagons": [
+        { "id": 1, "type": "Сидячий 1 кл.", "seatsCount": 48 },
+        { "id": 2, "type": "Сидячий 2 кл.", "seatsCount": 64 }
+      ]
     },
     {
       "id": "3",
@@ -22,7 +30,11 @@
       "from": "Київ",
       "to": "Львів",
       "departure": "2026-05-16T22:37:00",
-      "duration": "7г 23хв"
+      "duration": "7г 23хв",
+      "wagons": [
+        { "id": 1, "type": "Люкс", "seatsCount": 18 },
+        { "id": 2, "type": "Купе", "seatsCount": 36 }
+      ]
     },
     {
       "id": "4",
@@ -30,7 +42,11 @@
       "from": "Дрогобич",
       "to": "Львів",
       "departure": "2026-05-17T06:30:00",
-      "duration": "1г 45хв"
+      "duration": "1г 45хв",
+      "wagons": [
+        { "id": 1, "type": "Сидячий 2 кл.", "seatsCount": 60 }
+      ]
     }
-  ]
+  ],
+  "bookings": []
 }
