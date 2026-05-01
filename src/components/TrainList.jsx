@@ -4,11 +4,11 @@ import TrainCard from './TrainCard';
 import styles from './TrainList.module.css';
 
 const TrainList = () => {
-  const [trains, setTrains] = useState([]); // Стан для списку потягів [cite: 99]
-  const [searchTerm, setSearchTerm] = useState(''); // Стан для пошуку [cite: 121]
+  const [trains, setTrains] = useState([]); // Стан для списку потягів 
+  const [searchTerm, setSearchTerm] = useState(''); // Стан для пошуку 
 
   useEffect(() => {
-    // Виконуємо запит до сервера при завантаженні [cite: 92, 100]
+    // Виконуємо запит до сервера при завантаженні 
     axios.get('http://localhost:3001/trains')
       .then(response => {
         setTrains(response.data);
@@ -18,7 +18,7 @@ const TrainList = () => {
       });
   }, []);
 
-  // Фільтрація за номером або містом [cite: 48, 101, 121]
+  // Фільтрація за номером або містом 
   const filteredTrains = trains.filter(train => 
     train.number.toLowerCase().includes(searchTerm.toLowerCase()) ||
     train.from.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -27,7 +27,7 @@ const TrainList = () => {
 
   return (
     <div className={styles.container}>
-      {/* Поле пошуку [cite: 121] */}
+      {/* Поле пошуку  */}
       <input 
         type="text" 
         placeholder="Пошук за номером або маршрутом..." 
@@ -36,7 +36,7 @@ const TrainList = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       
-      {/* Список карток [cite: 41, 101, 119] */}
+      {/* Список карток  */}
       <div className={styles.list}>
         {filteredTrains.length > 0 ? (
           filteredTrains.map(train => (
