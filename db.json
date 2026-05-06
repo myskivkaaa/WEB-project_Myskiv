@@ -8,8 +8,24 @@
       "departure": "2026-05-15T14:30:00",
       "duration": "18г 20хв",
       "wagons": [
-        { "id": 1, "type": "Купе", "seatsCount": 36 },
-        { "id": 2, "type": "Плацкарт", "seatsCount": 54 }
+        {
+          "id": 1,
+          "type": "Купе",
+          "seatsCount": 36,
+          "price": 645
+        },
+        {
+          "id": 2,
+          "type": "Плацкарт",
+          "seatsCount": 54,
+          "price": 320
+        },
+        {
+          "id": 3,
+          "type": "Плацкарт",
+          "seatsCount": 54,
+          "price": 320
+        }
       ]
     },
     {
@@ -20,8 +36,24 @@
       "departure": "2026-05-16T06:00:00",
       "duration": "9г 12хв",
       "wagons": [
-        { "id": 1, "type": "Сидячий 1 кл.", "seatsCount": 48 },
-        { "id": 2, "type": "Сидячий 2 кл.", "seatsCount": 64 }
+        {
+          "id": 1,
+          "type": "Сидячий 1 кл.",
+          "seatsCount": 48,
+          "price": 1150
+        },
+        {
+          "id": 4,
+          "type": "Плацкарт",
+          "seatsCount": 54,
+          "price": 450
+        },
+        {
+          "id": 5,
+          "type": "Плацкарт",
+          "seatsCount": 54,
+          "price": 450
+        }
       ]
     },
     {
@@ -32,8 +64,24 @@
       "departure": "2026-05-16T22:37:00",
       "duration": "7г 23хв",
       "wagons": [
-        { "id": 1, "type": "Люкс", "seatsCount": 18 },
-        { "id": 2, "type": "Купе", "seatsCount": 36 }
+        {
+          "id": 1,
+          "type": "Люкс",
+          "seatsCount": 18,
+          "price": 1800
+        },
+        {
+          "id": 2,
+          "type": "Купе",
+          "seatsCount": 36,
+          "price": 720
+        },
+        {
+          "id": 3,
+          "type": "Купе",
+          "seatsCount": 36,
+          "price": 720
+        }
       ]
     },
     {
@@ -44,9 +92,46 @@
       "departure": "2026-05-17T06:30:00",
       "duration": "1г 45хв",
       "wagons": [
-        { "id": 1, "type": "Сидячий 2 кл.", "seatsCount": 60 }
+        {
+          "id": 1,
+          "type": "Плацкарт",
+          "seatsCount": 54,
+          "price": 180
+        },
+        {
+          "id": 2,
+          "type": "Плацкарт",
+          "seatsCount": 54,
+          "price": 180
+        }
       ]
     }
   ],
-  "bookings": []
+  "bookings": [
+    {
+      "trainId": "1",
+      "wagonId": 1,
+      "seatNumber": [
+        9
+      ],
+      "passengerName": "Victoria",
+      "phone": "0687539968",
+      "email": "Viktoriia.Myskiv@lnu.edu.ua",
+      "date": "2026-05-06T19:57:35.553Z",
+      "id": "NW2uqIPqrY8"
+    },
+    {
+      "trainId": "4",
+      "wagonId": 1,
+      "seatNumber": [
+        6
+      ],
+      "passengerName": "Victoria",
+      "phone": "0687539968",
+      "email": "victoria.myskiv@gmail.com",
+      "date": "2026-05-06T19:58:03.284Z",
+      "id": "XMkkRUqfTk8"
+    }
+  ]
+
 }
