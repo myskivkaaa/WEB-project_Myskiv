@@ -1,0 +1,140 @@
+.wagonContainer {
+  background: #f8f9fa;
+  padding: 40px 20px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.wagonScroll {
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+.wagonFrame {
+  display: inline-flex;
+  background: #fff;
+  border: 4px solid #2d3e50;
+  border-radius: 15px 80px 80px 15px; 
+  position: relative;
+  min-height: 240px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.serviceZone {
+  width: 60px;
+  background: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #adb5bd;
+  border: 1px solid #dee2e6;
+}
+
+.innerLayout {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainSeatsRow, .sideSeatsRow {
+  display: flex;
+  gap: 8px;
+}
+
+.compBlock, .sideBlock {
+  display: grid;
+  grid-template-columns: repeat(2, 40px);
+  gap: 6px;
+  padding: 6px;
+  border: 1px solid #f1f3f5;
+  background: #fafafa;
+}
+
+/* Напис ПРОХІД */
+.aisle {
+  height: 45px;
+  margin: 12px 0;
+  background: #f1f3f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.aisle::after {
+  content: "П Р О Х І Д";
+  color: #adb5bd;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.available { background: #fff; color: #495057; }
+.available:hover { border-color: #0056b3; background: #f0f7ff; }
+
+.selected { 
+  background: #0056b3 !important; 
+  color: #fff !important; 
+  border-color: #004494; 
+}
+
+/* Колір заброньованого місця */
+.reserved { 
+  background: #dee2e6 !important; 
+  color: #adb5bd !important; 
+  cursor: not-allowed;
+  border: 1px solid #ced4da;
+}
+
+
+
+.luxComp {
+  display: flex !important; 
+  flex-direction: row; 
+  gap: 15px; 
+  grid-template-columns: none !important; 
+  width: auto; 
+  padding: 10px; 
+  justify-content: center; 
+}
+
+.serviceText {
+  writing-mode: vertical-rl; /* Вертикальний напис для економії місця */
+  text-orientation: mixed;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #999;
+}
+
+.serviceZone {
+  width: 50px;
+  background: #f1f3f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #adb5bd;
+  border: 1px solid #dee2e6;
+}
+
+.aisle::after {
+  content: "П Р О Х І Д";
+  color: #adb5bd;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+}
