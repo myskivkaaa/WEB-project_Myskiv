@@ -1,0 +1,19 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.container h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.routeInfo {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
