@@ -1,0 +1,93 @@
+.wrapper {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.infoLine {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.wagonLine {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.wagonCard {
+  min-width: 100px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.wagonCard.active {
+  border-color: #007bff;
+  background: #f0f7ff;
+  box-shadow: 0 0 0 2px #007bff;
+}
+
+.wagonTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.wagonNum {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.wagonType {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.wagonDetail {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.detailHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.freeSeats {
+  background: #e7f3ff;
+  color: #007bff;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.legend {
+  display: flex;
+  gap: 15px;
+  font-size: 13px;
+}
+
+.available, .selected {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+
+.available { background: #fff; border: 1px solid #ddd; }
+.selected { background: #0056b3; }
